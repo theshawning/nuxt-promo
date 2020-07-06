@@ -43,6 +43,9 @@ module.exports = {
   */
   axios: {
   },
+  serverMiddleware: [
+    '~/server/routes/index'
+  ],
   /*
   ** Build configuration
   */
@@ -52,5 +55,6 @@ module.exports = {
     */
     extend(config, ctx) {
     }
-  }
+  },
+  telemetry: true
 }
